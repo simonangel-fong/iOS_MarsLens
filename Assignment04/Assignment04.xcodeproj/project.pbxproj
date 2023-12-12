@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		F42E175A2B2631720084B8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E17592B2631720084B8E5 /* AppDelegate.swift */; };
 		F42E175C2B2631720084B8E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E175B2B2631720084B8E5 /* SceneDelegate.swift */; };
-		F42E175E2B2631720084B8E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E175D2B2631720084B8E5 /* ViewController.swift */; };
 		F42E17612B2631720084B8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42E175F2B2631720084B8E5 /* Main.storyboard */; };
 		F42E17632B2631720084B8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42E17622B2631720084B8E5 /* Assets.xcassets */; };
 		F42E17662B2631720084B8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42E17642B2631720084B8E5 /* LaunchScreen.storyboard */; };
+		F42E17702B26441E0084B8E5 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E176F2B26441E0084B8E5 /* AppModel.swift */; };
+		F42E17722B26491E0084B8E5 /* RoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E17712B26491E0084B8E5 /* RoverListViewController.swift */; };
+		F42E17742B2650B90084B8E5 /* RoverInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E17732B2650B90084B8E5 /* RoverInfoViewController.swift */; };
+		F42E17762B2652830084B8E5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E17752B2652830084B8E5 /* APIManager.swift */; };
+		F42E17782B2665C90084B8E5 /* RoverPhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E17772B2665C90084B8E5 /* RoverPhotoListViewController.swift */; };
+		F42E177A2B266EF70084B8E5 /* PhotoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E17792B266EF70084B8E5 /* PhotoTableCell.swift */; };
+		F42E177C2B2675C40084B8E5 /* RoverPhotoShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E177B2B2675C40084B8E5 /* RoverPhotoShowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F42E17562B2631720084B8E5 /* Assignment04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42E17592B2631720084B8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F42E175B2B2631720084B8E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F42E175D2B2631720084B8E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F42E17602B2631720084B8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F42E17622B2631720084B8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F42E17652B2631720084B8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42E17672B2631720084B8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42E176F2B26441E0084B8E5 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		F42E17712B26491E0084B8E5 /* RoverListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverListViewController.swift; sourceTree = "<group>"; };
+		F42E17732B2650B90084B8E5 /* RoverInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverInfoViewController.swift; sourceTree = "<group>"; };
+		F42E17752B2652830084B8E5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F42E17772B2665C90084B8E5 /* RoverPhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoListViewController.swift; sourceTree = "<group>"; };
+		F42E17792B266EF70084B8E5 /* PhotoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableCell.swift; sourceTree = "<group>"; };
+		F42E177B2B2675C40084B8E5 /* RoverPhotoShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoShowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +70,17 @@
 			children = (
 				F42E17592B2631720084B8E5 /* AppDelegate.swift */,
 				F42E175B2B2631720084B8E5 /* SceneDelegate.swift */,
-				F42E175D2B2631720084B8E5 /* ViewController.swift */,
+				F42E17712B26491E0084B8E5 /* RoverListViewController.swift */,
+				F42E17732B2650B90084B8E5 /* RoverInfoViewController.swift */,
+				F42E17772B2665C90084B8E5 /* RoverPhotoListViewController.swift */,
+				F42E177B2B2675C40084B8E5 /* RoverPhotoShowViewController.swift */,
 				F42E175F2B2631720084B8E5 /* Main.storyboard */,
 				F42E17622B2631720084B8E5 /* Assets.xcassets */,
 				F42E17642B2631720084B8E5 /* LaunchScreen.storyboard */,
 				F42E17672B2631720084B8E5 /* Info.plist */,
+				F42E176F2B26441E0084B8E5 /* AppModel.swift */,
+				F42E17752B2652830084B8E5 /* APIManager.swift */,
+				F42E17792B266EF70084B8E5 /* PhotoTableCell.swift */,
 			);
 			path = Assignment04;
 			sourceTree = "<group>";
@@ -138,9 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42E175E2B2631720084B8E5 /* ViewController.swift in Sources */,
+				F42E17762B2652830084B8E5 /* APIManager.swift in Sources */,
+				F42E177C2B2675C40084B8E5 /* RoverPhotoShowViewController.swift in Sources */,
+				F42E177A2B266EF70084B8E5 /* PhotoTableCell.swift in Sources */,
 				F42E175A2B2631720084B8E5 /* AppDelegate.swift in Sources */,
+				F42E17722B26491E0084B8E5 /* RoverListViewController.swift in Sources */,
+				F42E17742B2650B90084B8E5 /* RoverInfoViewController.swift in Sources */,
 				F42E175C2B2631720084B8E5 /* SceneDelegate.swift in Sources */,
+				F42E17702B26441E0084B8E5 /* AppModel.swift in Sources */,
+				F42E17782B2665C90084B8E5 /* RoverPhotoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
