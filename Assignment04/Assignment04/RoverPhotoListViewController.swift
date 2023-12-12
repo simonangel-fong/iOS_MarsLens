@@ -66,11 +66,12 @@ class RoverPhotoListViewController: UIViewController, UIPickerViewDelegate, UIPi
             cell.solLbl.text = "Sol: \(photo_list[indexPath.row].sol)"
             cell.earthDateLbl.text = "Earth Date: \(photo_list[indexPath.row].earth_date)"
             cell.cameraLbl.text = "Camera: \(photo_list[indexPath.row].camera.name)"
-            
+            cell.indicator.startAnimating()
             /// call function to load image
             loadImg(
                 urlStr: photo_list[indexPath.row].img_src,
-                imgV: cell.cellImgV
+                imgV: cell.cellImgV,
+                indicator:cell.indicator
             )
         }
         return cell
@@ -149,7 +150,7 @@ class RoverPhotoListViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     /// function to load image
-    func loadImg (urlStr:String, imgV:UIImageView){
+    func loadImg (urlStr:String, imgV:UIImageView, indicator: UIActivityIndicatorView){
         let queue = DispatchQueue.init(label: "myQ")
         queue.async {
             do{
@@ -160,6 +161,7 @@ class RoverPhotoListViewController: UIViewController, UIPickerViewDelegate, UIPi
                 /// access items and send data back to the main thread after the bg thread finished
                 DispatchQueue.main.async {
                     imgV.image = UIImage(data:imageData)
+                    indicator.stopAnimating()   /// stop animation when success
                 }
             }catch{
                 DispatchQueue.main.async {

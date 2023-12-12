@@ -9,6 +9,7 @@ import Foundation
 
 import UIKit
 
+/// A data model of photo list to decode Json
 class photoModel: Codable{
     var photos:[photosObj]?
     
@@ -25,6 +26,7 @@ class photoModel: Codable{
     }
 }
 
+/// A data model of rover info to decode Json
 class roverModel: Codable{
     var photo_manifest: manifestObj?
     
@@ -39,6 +41,7 @@ class roverModel: Codable{
     }
 }
 
+/// A model of this app
 class AppModel{
     
     let cam_list:[String] = ["FHAZ", "RHAZ", "NAVCAM"]

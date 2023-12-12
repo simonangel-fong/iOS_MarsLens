@@ -23,12 +23,13 @@ class RoverPhotoShowViewController: UIViewController {
     @IBOutlet weak var cameraLbl: UILabel!
     @IBOutlet weak var solLbl: UILabel!
     @IBOutlet weak var earthDateLbl: UILabel!
-    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     /// # View Controller functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        indicator.hidesWhenStopped = true
         /// register notification center
         NotificationCenter.default.addObserver(
             self, // the current vc as observer
@@ -38,6 +39,7 @@ class RoverPhotoShowViewController: UIViewController {
         
         /// if image src is not nil, call api to get image
         if img_src != "" {
+            indicator.startAnimating()
             APIManager.shared.fetchData(
                 urlStr: img_src, 
                 notificationName: NOTIFICATION_NAME_IMG)
@@ -65,6 +67,7 @@ class RoverPhotoShowViewController: UIViewController {
             /// print("success")
             imageV.image = UIImage(data: data as! Data)
         }
+        self.indicator.stopAnimating()
     }
     
     /// function to show alert

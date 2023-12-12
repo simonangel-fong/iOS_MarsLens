@@ -343,15 +343,24 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="T7c-4J-nh2">
+                                                            <rect key="frame" x="50" y="51" width="40" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="tvJ-yV-OI1"/>
+                                                                <constraint firstAttribute="width" constant="40" id="uWj-iy-1MS"/>
+                                                            </constraints>
+                                                        </activityIndicatorView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                     <constraints>
                                                         <constraint firstItem="96Z-ka-aFc" firstAttribute="leading" secondItem="ZCS-UN-K1K" secondAttribute="trailing" constant="20" id="9MS-5C-of7"/>
                                                         <constraint firstItem="ZCS-UN-K1K" firstAttribute="top" secondItem="eTf-69-KsR" secondAttribute="top" id="AnW-YY-tvJ"/>
+                                                        <constraint firstItem="T7c-4J-nh2" firstAttribute="top" secondItem="eTf-69-KsR" secondAttribute="topMargin" constant="40" id="BES-pX-frO"/>
                                                         <constraint firstItem="96Z-ka-aFc" firstAttribute="top" secondItem="lIB-71-aOB" secondAttribute="bottom" constant="10" id="Cth-2w-oNJ"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="aPz-jl-7Fn" secondAttribute="trailing" constant="20" id="JwV-bn-A91"/>
                                                         <constraint firstItem="aPz-jl-7Fn" firstAttribute="leading" secondItem="ZCS-UN-K1K" secondAttribute="trailing" constant="20" id="Nhc-kk-Lnu"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="96Z-ka-aFc" secondAttribute="trailing" constant="20" id="NpY-dv-IPN"/>
+                                                        <constraint firstItem="T7c-4J-nh2" firstAttribute="leading" secondItem="eTf-69-KsR" secondAttribute="leadingMargin" constant="30" id="Tx2-kR-T93"/>
                                                         <constraint firstItem="aPz-jl-7Fn" firstAttribute="top" secondItem="96Z-ka-aFc" secondAttribute="bottom" constant="5" id="fPj-T4-BQ5"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="lIB-71-aOB" secondAttribute="trailing" constant="20" id="jVu-xO-T7i"/>
                                                         <constraint firstItem="lIB-71-aOB" firstAttribute="leading" secondItem="ZCS-UN-K1K" secondAttribute="trailing" constant="20" id="sY1-LL-b5E"/>
@@ -363,6 +372,7 @@
                                                     <outlet property="cameraLbl" destination="aPz-jl-7Fn" id="jyy-df-E6Q"/>
                                                     <outlet property="cellImgV" destination="ZCS-UN-K1K" id="RO0-cn-90M"/>
                                                     <outlet property="earthDateLbl" destination="96Z-ka-aFc" id="NNh-ib-ii2"/>
+                                                    <outlet property="indicator" destination="T7c-4J-nh2" id="ySH-Ig-7jS"/>
                                                     <outlet property="solLbl" destination="lIB-71-aOB" id="y93-yL-4NO"/>
                                                     <segue destination="xVX-9d-wqN" kind="show" id="Bkc-4p-zQ9"/>
                                                 </connections>
@@ -423,12 +433,21 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G5i-LS-NAK">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
                                     </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-tH-rck">
+                                        <rect key="frame" x="176.66666666666666" y="176.66666666666669" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4YI-qp-hj8"/>
+                                            <constraint firstAttribute="height" constant="40" id="ZaY-o9-qXZ"/>
+                                        </constraints>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="G5i-LS-NAK" secondAttribute="bottom" id="ApV-se-Dzd"/>
                                     <constraint firstItem="G5i-LS-NAK" firstAttribute="leading" secondItem="Uvq-T7-z8p" secondAttribute="leading" id="Ogs-aB-3tn"/>
                                     <constraint firstItem="G5i-LS-NAK" firstAttribute="top" secondItem="Uvq-T7-z8p" secondAttribute="top" id="QGR-ol-JgX"/>
+                                    <constraint firstItem="a9f-tH-rck" firstAttribute="centerY" secondItem="Uvq-T7-z8p" secondAttribute="centerY" id="TQF-64-Yfx"/>
+                                    <constraint firstItem="a9f-tH-rck" firstAttribute="centerX" secondItem="Uvq-T7-z8p" secondAttribute="centerX" id="bjO-Tx-gRp"/>
                                     <constraint firstAttribute="trailing" secondItem="G5i-LS-NAK" secondAttribute="trailing" id="ffZ-zH-E32"/>
                                     <constraint firstAttribute="height" constant="393" id="rhb-g1-f4R"/>
                                 </constraints>
@@ -495,6 +514,7 @@
                         <outlet property="cameraLbl" destination="ivd-z7-LSC" id="6TT-tj-Ct9"/>
                         <outlet property="earthDateLbl" destination="qAg-tb-YEC" id="ylU-nm-5Bc"/>
                         <outlet property="imageV" destination="G5i-LS-NAK" id="MFp-D7-u6l"/>
+                        <outlet property="indicator" destination="a9f-tH-rck" id="GJW-IO-ohs"/>
                         <outlet property="roverLbl" destination="S3V-6s-UfF" id="CYT-hJ-s2F"/>
                         <outlet property="solLbl" destination="H5o-rZ-NRA" id="SCX-kX-aUl"/>
                     </connections>

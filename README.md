@@ -12,6 +12,7 @@ This is an iOS repo for assigment04
   - api request
   - load image
   - decode json
+  - Activity Indicator
 
 ---
 
@@ -33,6 +34,11 @@ This is an iOS repo for assigment04
 ![photo list](./pic/03.png)
 
 ![photo](./pic/04.png)
+
+- Alert when no photo on a sol
+
+![photo](./pic/05.png)
+
 
 ---
 

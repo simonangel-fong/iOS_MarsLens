@@ -10,16 +10,14 @@ import Foundation
 class PhotoTableCell: UITableViewCell {
     
     @IBOutlet weak var cellImgV: UIImageView!
-    
     @IBOutlet weak var solLbl: UILabel!
-    
     @IBOutlet weak var earthDateLbl: UILabel!
-    
     @IBOutlet weak var cameraLbl: UILabel!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.indicator.hidesWhenStopped = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
