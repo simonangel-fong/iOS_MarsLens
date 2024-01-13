@@ -1,6 +1,6 @@
-# ITE-5334-iOS-Assignment04
+# MarsLens
 
-This is an iOS repo for assigment04
+This is an iOS repo for iOS1 assigment04
 
 - [x] Build 1.00
 - [x] Add Comments
